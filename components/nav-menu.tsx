@@ -25,7 +25,7 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
             href="/" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Accueil
+            Pose Placo
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
@@ -34,10 +34,10 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
       <NavigationMenuItem className="w-full">
         <NavigationMenuLink asChild>
           <Link 
-            href="/placo" 
+            href="/" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Pose placo
+            Peinture
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
@@ -46,10 +46,10 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
       <NavigationMenuItem className="w-full">
         <NavigationMenuLink asChild>
           <Link 
-            href="/peinture" 
+            href="/isolation" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Peinture
+            Isolation
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
@@ -58,10 +58,10 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
       <NavigationMenuItem className="w-full">
         <NavigationMenuLink asChild>
           <Link 
-            href="/isolation" 
+            href="/actualite" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Isolation
+            Actualité
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>

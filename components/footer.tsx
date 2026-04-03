@@ -61,9 +61,9 @@ const Footer = () => {
             {/* Copyright Blanc avec signature Pinyon */}
             <span className="text-teal-100/80 text-sm font-medium">
               &copy; {new Date().getFullYear()}{" "}
-              <span className="  text-white">Merci Immobilier. Agence Immobilière</span> 
+              <span className="  text-white">Prohabitation  Plaquiste Perpignan Peinture Perpignan Isolation Perpignan</span> 
             
-              {" "}Made in Perpignan
+              
             </span>
 
             

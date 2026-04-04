@@ -6,8 +6,9 @@ import { Separator } from "@/components/ui/separator";
 
 const footerLinks = [
 
-  { title: "Pose placo", href: "/estimation" },
-  { title: "Peinture", href: "/honoraires" },
+  { title: "Pose placo", href: "/placo" },
+    { title: "Peinture", href: "/peinture" },
+  { title: "Isolation", href: "/isolation" },
   { title: "Recrutement", href: "/recrutement" },
   { title: "Contact", href: "contact" },
   { title: "Mentions Légales", href: "mentions" },

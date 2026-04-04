@@ -17,9 +17,11 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <Button className="hidden sm:inline-flex" variant="outline">
-            Sign In
+            Se connecter
           </Button>
-          <Button>Get Started</Button>
+         <Button className="bg-teal-600 hover:bg-teal-700 text-white border-none ">
+  tel: 06 16 22 46 82
+</Button>
 
           {/* Mobile Menu */}
           <div className="md:hidden">

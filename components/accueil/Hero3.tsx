@@ -46,7 +46,7 @@ export default function Hero3() {
             className="relative w-full h-full max-w-[420px] aspect-square overflow-hidden shadow-2xl md:ml-12 lg:ml-20"
           >
             <Image
-              src="/images/accueil/accueil2.jpg" 
+              src="/images/accueil/accueil3.jpg" 
               alt="Peinture Perpignan" 
               fill 
               className="object-cover scale-110"

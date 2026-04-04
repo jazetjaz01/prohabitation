@@ -1,45 +1,47 @@
+"use client";
+
 import {
-  Blocks,
-  Bot,
-  ChartPie,
-  Film,
-  MessageCircle,
-  Settings2,
+  MessageSquare,
+  Clock,
+  ShieldCheck,
+  HardHat,
+  Leaf,
+  MapPin,
 } from "lucide-react";
 
 const features = [
   {
-    icon: Settings2,
+    icon: MessageSquare,
     title: "Communication",
     description:
       "Nous attachons une attention toute particulière à la qualité de nos échanges, tant avec nos clients qu’avec les artisans et ouvriers présents sur le chantier.",
   },
   {
-    icon: Blocks,
+    icon: Clock,
     title: "Délais",
     description:
       "Notre équipe s’engage à respecter les délais annoncés et à vous tenir informé immédiatement en cas de difficulté.",
   },
   {
-    icon: Bot,
+    icon: ShieldCheck,
     title: "Normes",
     description:
       "Dans notre métier, les normes sont strictes et nombreuses. C’est pourquoi nous sélectionnons en permanence des produits innovants, parfaitement conformes à ces exigences.",
   },
   {
-    icon: Film,
+    icon: HardHat,
     title: "Sécurité",
     description:
       "Nous abordons chaque chantier comme s’il s’agissait de notre propre espace. La sécurité et la propreté sont au cœur de nos priorités.",
   },
   {
-    icon: ChartPie,
+    icon: Leaf,
     title: "Environnement",
     description:
       "Nous nous engageons en permanence à privilégier des solutions plus écologiques et durables, et à retourner les déchets de chantier à nos fournisseurs pour recyclage.",
   },
   {
-    icon: MessageCircle,
+    icon: MapPin,
     title: "Secteur d'intervention",
     description:
       "Nous opérons principalement dans les Pyrénées Orientales et pour des chantiers techniques nous intervenons dans l'Aude, l'Hérault et la Haute Garonne ( Toulouse )",

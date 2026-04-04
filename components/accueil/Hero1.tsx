@@ -9,18 +9,30 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden bg-background border-b min-h-[600px]">
-      <div className="flex flex-col lg:grid lg:grid-cols-2 lg:h-[700px] relative">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:h-[700px] relative">
         
-        {/* --- Colonne TEXTE (Gauche) --- */}
+        {/* --- Colonne IMAGE (Gauche maintenant) --- */}
+        <div className="relative h-[300px] lg:h-full w-full z-0">
+          <Image
+            src="/images/accueil/accueil1.jpg" 
+            alt="Travaux de placo et peinture Perpignan" 
+            fill 
+            priority 
+            className="object-cover" 
+          />
+        </div>
+
+        {/* --- Colonne TEXTE (Droite maintenant) --- */}
         <div className="relative p-8 lg:p-20 flex flex-col justify-center items-start z-10 bg-slate-200
                         lg:bg-transparent
                         lg:after:content-[''] lg:after:absolute 
-                        lg:after:top-0 lg:after:bottom-0 lg:after:right-[-100px] 
-                        lg:after:left-0 
-                        lg:after:bg-slate-200 lg:after:-z-10
-                        lg:after:[clip-path:polygon(0%_0%,100%_0%,calc(100%-100px)_100%,0%_100%)]">
+                        lg:after:top-0 lg:after:bottom-0 lg:after:left-[-100px] 
+                        lg:after:right-0 
+                        lg:after:bg-slate-300 lg:after:-z-10
+                        /* Le clip-path est inversé pour créer l'effet de biseau vers la gauche */
+                        lg:after:[clip-path:polygon(100%_0%,0%_0%,100px_100%,100%_100%)]">
           
-          <div className="max-w-xl">
+          <div className="max-w-xl lg:ml-12">
             <Badge className="rounded-full border-border py-1 px-4 mb-6" variant="secondary">
               <Link href="/actualite" className="flex items-center text-sm font-medium">
                 Actualité Prohabitation <ArrowUpRight className="ml-1 size-4" />
@@ -45,17 +57,6 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-        </div>
-
-        {/* --- Colonne IMAGE (Droite) --- */}
-        <div className="relative h-[300px] lg:h-full w-full z-0">
-          <Image
-            src="/images/accueil/accueil1.jpg" 
-            alt="Travaux de placo et peinture Prohabitation" 
-            fill 
-            priority 
-            className="object-cover" 
-          />
         </div>
 
       </div>

@@ -4,6 +4,7 @@ import Hero2 from "@/components/accueil/Hero2";
 import Hero3 from "@/components/accueil/Hero3";
 import Hero4 from "@/components/accueil/Hero4";
 import Hero5 from "@/components/accueil/Hero5";
+import Hero6 from "@/components/accueil/Hero6";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
        <Hero3 />
        <Hero4 />
        <Hero5 />
+       <Hero6 />
        
        
        

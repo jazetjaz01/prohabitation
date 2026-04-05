@@ -34,7 +34,7 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
       <NavigationMenuItem className="w-full">
         <NavigationMenuLink asChild>
           <Link 
-            href="/" 
+            href="/peinture" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
             Peinture

@@ -15,7 +15,7 @@ export default function Hero1() {
         <div className="relative h-[300px] lg:h-full w-full z-0">
           <Image
             src="/images/peinture/peinture1.jpg" 
-            alt="pose de placo et cloisons Perpignan" 
+            alt="Artisan peintre Perpignan" 
             fill 
             priority 
             className="object-cover" 
@@ -39,7 +39,7 @@ export default function Hero1() {
             </Badge>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-slate-900 leading-[1.1] tracking-tight">
-              Pose placo<br /> 
+              Artisan peintre<br /> 
               <span className="text-slate-600">et cloisons</span>
             </h1>
 

@@ -78,9 +78,7 @@ export default function ContactPage() {
         alert("Votre message a bien été envoyé à Prohabitation.");
         form.reset();
       } else {
-        const errorData = await response.json();
         alert("Une erreur est survenue lors de l'envoi du formulaire.");
-        console.error("Erreur API:", errorData);
       }
     } catch (error) {
       console.error("Erreur lors de la soumission:", error);
@@ -95,11 +93,11 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-slate-200 py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-slate-800 mb-8">Contact</h1>
+        <h1 className="text-4xl font-bold text-slate-800 mb-8 uppercase tracking-tighter">Contact</h1>
 
         <div className="bg-white p-8 md:p-16 shadow-sm border border-slate-100">
           
-          {/* --- SECTION COORDONNÉES EN DÉBUT --- */}
+          {/* --- SECTION COORDONNÉES --- */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 pb-12 border-b border-slate-100">
             <div className="flex items-center gap-4">
               <div className="p-3 bg-slate-100 text-teal-700">
@@ -139,7 +137,7 @@ export default function ContactPage() {
                 
                 {/* --- COLONNE GAUCHE : VOS INFORMATIONS --- */}
                 <div className="space-y-8">
-                  <h2 className="text-xl font-bold text-slate-800 uppercase tracking-wider">Vos Informations</h2>
+                  <h2 className="text-xl font-bold text-slate-800 uppercase tracking-wider border-b pb-2">1. Vos Informations</h2>
                   
                   <FormField
                     control={form.control}
@@ -148,15 +146,20 @@ export default function ContactPage() {
                       <FormItem className="space-y-4">
                         <FormLabel className="flex items-center gap-1">Civilité <span className="text-teal-600">*</span></FormLabel>
                         <FormControl>
-                          <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-8">
-                            <div className="flex flex-col items-center gap-2 cursor-pointer">
+                          {/* Correction : Utilisation de value au lieu de defaultValue */}
+                          <RadioGroup 
+                            onValueChange={field.onChange} 
+                            value={field.value} 
+                            className="flex gap-8"
+                          >
+                            <div className="flex flex-col items-center gap-2">
                               <User className="size-8 text-slate-400" />
                               <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="Monsieur" id="m" />
                                 <label htmlFor="m" className="text-sm font-medium cursor-pointer">Monsieur</label>
                               </div>
                             </div>
-                            <div className="flex flex-col items-center gap-2 cursor-pointer">
+                            <div className="flex flex-col items-center gap-2">
                               <User className="size-8 text-slate-400" />
                               <div className="flex items-center space-x-2">
                                 <RadioGroupItem value="Madame" id="f" />
@@ -165,6 +168,7 @@ export default function ContactPage() {
                             </div>
                           </RadioGroup>
                         </FormControl>
+                        <FormMessage />
                       </FormItem>
                     )}
                   />
@@ -179,7 +183,7 @@ export default function ContactPage() {
                             <Tag className="absolute left-3 top-3.5 size-5 text-slate-400" />
                             <FormControl><Input placeholder="Nom *" {...field} className={iconInputStyle} /></FormControl>
                           </div>
-                          <FormMessage className="text-xs text-red-500 font-normal" />
+                          <FormMessage />
                         </FormItem>
                       )}
                     />
@@ -192,7 +196,7 @@ export default function ContactPage() {
                             <Tag className="absolute left-3 top-3.5 size-5 text-slate-400" />
                             <FormControl><Input placeholder="Prénom *" {...field} className={iconInputStyle} /></FormControl>
                           </div>
-                          <FormMessage className="text-xs text-red-500 font-normal" />
+                          <FormMessage />
                         </FormItem>
                       )}
                     />
@@ -208,7 +212,7 @@ export default function ContactPage() {
                             <Phone className="absolute left-3 top-3.5 size-5 text-slate-400" />
                             <FormControl><Input placeholder="Téléphone *" {...field} className={iconInputStyle} /></FormControl>
                           </div>
-                          <FormMessage className="text-xs text-red-500 font-normal" />
+                          <FormMessage />
                         </FormItem>
                       )}
                     />
@@ -221,7 +225,7 @@ export default function ContactPage() {
                             <Mail className="absolute left-3 top-3.5 size-5 text-slate-400" />
                             <FormControl><Input placeholder="Adresse e-mail *" {...field} className={iconInputStyle} /></FormControl>
                           </div>
-                          <FormMessage className="text-xs text-red-500 font-normal" />
+                          <FormMessage />
                         </FormItem>
                       )}
                     />
@@ -233,20 +237,21 @@ export default function ContactPage() {
                     render={({ field }) => (
                       <FormItem className="space-y-4">
                         <FormLabel>Quel est votre projet ? *</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        {/* Correction : Utilisation de value pour le Select également */}
+                        <Select onValueChange={field.onChange} value={field.value}>
                           <FormControl>
                             <SelectTrigger className="h-12 rounded-none bg-slate-50/50">
                               <SelectValue placeholder="Choisir une option" />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="bouche">Pose placo</SelectItem>
-                            <SelectItem value="reseaux">Pose joint</SelectItem>
-                            <SelectItem value="panneau">Peinture</SelectItem>
-                            <SelectItem value="autre">Isolation</SelectItem>
+                            <SelectItem value="placo">Pose placo</SelectItem>
+                            <SelectItem value="joint">Pose joint</SelectItem>
+                            <SelectItem value="peinture">Peinture</SelectItem>
+                            <SelectItem value="isolation">Isolation</SelectItem>
                           </SelectContent>
                         </Select>
-                        <FormMessage className="text-xs text-red-500 font-normal" />
+                        <FormMessage />
                       </FormItem>
                     )}
                   />
@@ -254,7 +259,7 @@ export default function ContactPage() {
 
                 {/* --- COLONNE DROITE : VOTRE DEMANDE --- */}
                 <div className="space-y-8">
-                  <h2 className="text-xl font-bold text-slate-800 uppercase tracking-wider">Votre demande de travaux en détail</h2>
+                  <h2 className="text-xl font-bold text-slate-800 uppercase tracking-wider border-b pb-2">2. Votre Message</h2>
                   <FormField
                     control={form.control}
                     name="message"
@@ -264,13 +269,13 @@ export default function ContactPage() {
                           <MessageSquare className="absolute left-3 top-4 size-5 text-slate-400" />
                           <FormControl>
                             <Textarea 
-                              placeholder="Message *" 
-                              className="min-h-[250px] pl-10 pt-4 rounded-none bg-slate-50/50 border-slate-200" 
+                              placeholder="Décrivez votre demande en détail *" 
+                              className="min-h-[250px] pl-10 pt-4 rounded-none bg-slate-50/50 border-slate-200 focus:ring-teal-600" 
                               {...field} 
                             />
                           </FormControl>
                         </div>
-                        <FormMessage className="text-xs text-red-500 font-normal" />
+                        <FormMessage />
                       </FormItem>
                     )}
                   />
@@ -281,15 +286,15 @@ export default function ContactPage() {
                 <Button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="bg-slate-800 hover:bg-teal-700 text-white px-12 h-12 rounded-none transition-all uppercase font-bold tracking-widest flex items-center gap-2"
+                  className="bg-slate-800 hover:bg-teal-700 text-white px-16 h-14 rounded-none transition-all uppercase font-bold tracking-widest flex items-center gap-3 text-lg"
                 >
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="animate-spin size-4" />
-                      Envoi en cours...
+                      <Loader2 className="animate-spin size-5" />
+                      Envoi...
                     </>
                   ) : (
-                    "Envoyer"
+                    "Envoyer mon message"
                   )}
                 </Button>
               </div>

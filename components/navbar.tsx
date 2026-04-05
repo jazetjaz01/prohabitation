@@ -16,12 +16,18 @@ const Navbar = () => {
         <NavMenu className="hidden md:block" />
 
         <div className="flex items-center gap-3">
-          <Button className="hidden sm:inline-flex" variant="outline">
-            Demande devis
+          {/* Ajout du lien vers la page devis */}
+          <Link href="/devis">
+            <Button className="hidden sm:inline-flex" variant="outline">
+              Demande devis
+            </Button>
+          </Link>
+          
+          {/* Petit conseil : utilisez "asChild" si vous voulez que le Link 
+              soit le seul élément cliquable sans doubler les balises <a> */}
+          <Button  className="bg-teal-600 hover:bg-teal-700 text-white border-none">
+            <a href="tel:0616224682">06 16 22 46 82</a>
           </Button>
-         <Button className="bg-teal-600 hover:bg-teal-700 text-white border-none ">
-  tel: 06 16 22 46 82
-</Button>
 
           {/* Mobile Menu */}
           <div className="md:hidden">

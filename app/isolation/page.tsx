@@ -1,7 +1,7 @@
 
 import Hero1 from "@/components/isolation/Hero1";
 import Hero2 from "@/components/isolation/Hero2";
-import Hero3 from "@/components/placo/Hero3";
+import Hero3 from "@/components/isolation/Hero3";
 import Hero4 from "@/components/placo/Hero4";
 import Hero5 from "@/components/accueil/Hero5";
 import Hero6 from "@/components/accueil/Hero6";

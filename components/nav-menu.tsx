@@ -22,10 +22,10 @@ export const NavMenu = ({ className, ...props }: ComponentProps<typeof Navigatio
       <NavigationMenuItem className="w-full">
         <NavigationMenuLink asChild>
           <Link 
-            href="/" 
+            href="/placo" 
             className={cn(navigationMenuTriggerStyle(), "w-full !justify-center md:w-max")}
           >
-            Pose Placo
+            Placo
           </Link>
         </NavigationMenuLink>
       </NavigationMenuItem>

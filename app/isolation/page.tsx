@@ -1,5 +1,5 @@
 
-import Hero from "@/components/placo/Hero1";
+import Hero1 from "@/components/isolation/Hero1";
 import Hero2 from "@/components/placo/Hero2";
 import Hero3 from "@/components/placo/Hero3";
 import Hero4 from "@/components/placo/Hero4";
@@ -11,7 +11,7 @@ export default function Isolation() {
     <div className="min-h-screen bg-background font-sans">
       
       <main className="flex flex-col">
-       <Hero />
+       <Hero1 />
        <Hero2 />
        <Hero3 />
        <Hero4 />

@@ -40,11 +40,12 @@ export default function Hero1() {
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-slate-900 leading-[1.1] tracking-tight">
               Artisan peintre<br /> 
-              <span className="text-slate-600">et cloisons</span>
+              <span className="text-slate-600">Perpignan et Pyrénées Orientales</span>
             </h1>
 
             <p className="mt-6 text-slate-700 text-lg md:text-xl leading-relaxed opacity-90">
-              Prohabitation intervient à <strong>Perpignan</strong> et dans l'ensemble des Pyrénées Orientales pour tous vos projets de rénovation ou de construction concernant la pose de placo et de cloisons.
+              Vous avez envie de repeindre une pièce ou la totalité de votre appartement ou maison  ? Vous souhaitez une finition parfaite ? Vous n'êtes pas certain de la couleur à utiliser ?
+Faites appel à Prohabitation !
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">

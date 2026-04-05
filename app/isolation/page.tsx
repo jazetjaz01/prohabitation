@@ -1,6 +1,6 @@
 
 import Hero1 from "@/components/isolation/Hero1";
-import Hero2 from "@/components/placo/Hero2";
+import Hero2 from "@/components/isolation/Hero2";
 import Hero3 from "@/components/placo/Hero3";
 import Hero4 from "@/components/placo/Hero4";
 import Hero5 from "@/components/accueil/Hero5";

@@ -1,0 +1,31 @@
+
+import Hero from "@/components/placo/Hero1";
+import Hero2 from "@/components/placo/Hero2";
+import Hero3 from "@/components/placo/Hero3";
+import Hero4 from "@/components/placo/Hero4";
+import Hero5 from "@/components/accueil/Hero5";
+import Hero6 from "@/components/accueil/Hero6";
+
+export default function Isolation() {
+  return (
+    <div className="min-h-screen bg-background font-sans">
+      
+      <main className="flex flex-col">
+       <Hero />
+       <Hero2 />
+       <Hero3 />
+       <Hero4 />
+       <Hero5 />
+       <Hero6 />
+       
+       
+       
+      
+       
+       
+
+       
+      </main>
+    </div>
+  );
+}

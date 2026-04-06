@@ -3,7 +3,7 @@
 export const Logo = () => (
   <div className="flex flex-col items-center leading-none">
     {/* "merci" toujours en Monoton avec un grand espacement */}
-    <span className="font-monoton text-base md:text-2xl tracking-widest text-teal-600">
+    <span className="font-monoton text-xs md:text-2xl tracking-widest text-teal-600">
       prohabitation
     </span>
     

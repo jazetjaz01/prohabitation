@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link"; // Import de Link indispensable
 
 export default function Hero2() {
   return (
@@ -12,20 +13,15 @@ export default function Hero2() {
           <div 
             className="relative w-full h-full max-w-[480px] overflow-hidden shadow-2xl"
             style={{
-              // On garde la pente : 20% de décalage en haut à gauche
               clipPath: "polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%)",
             }}
           >
             <Image
               src="/images/accueil/accueil2.jpg" 
-              alt="Maison Merci Immobilier" 
+              alt="Réalisation placo Prohabitation Perpignan" 
               fill 
               priority
               className="object-cover object-center scale-110" 
-              /* Sizes optimisé : 
-                 - Sur mobile (< 768px) : presque pleine largeur (90vw)
-                 - Sur desktop : occupe un peu moins de la moitié (40vw)
-              */
               sizes="(max-width: 768px) 90vw, 40vw"
             />
           </div>
@@ -45,17 +41,20 @@ export default function Hero2() {
 
             <div className="space-y-4 text-slate-700 text-base md:text-lg leading-relaxed mb-8">
               <p className="font-semibold text-slate-800">
-                Spécialiste de la pose de placo
+                Spécialiste de la pose de placo à Perpignan
               </p>
               <p>
                 Cloisons acoustiques sur ossature, coupe-feux ou répondant à certaines contraintes spécifiques et aussi cloisons traditionnelles en carreaux de plâtre.
               </p>
             </div>
 
-            {/* --- Bouton --- */}
-            <button className="group relative bg-slate-800 text-white px-8 py-3 text-lg font-medium transition-all duration-300 ease-in-out hover:bg-teal-700 hover:shadow-xl active:scale-95 w-fit">
-              Pose de placo
-            </button>
+            {/* --- Bouton avec Lien vers /placo --- */}
+            <Link 
+              href="/placo" 
+              className="inline-block group relative bg-slate-800 text-white px-8 py-3 text-lg font-medium transition-all duration-300 ease-in-out hover:bg-teal-700 hover:shadow-xl active:scale-95 w-fit"
+            >
+              Découvrir nos solutions placo
+            </Link>
           </div>
         </div>
 

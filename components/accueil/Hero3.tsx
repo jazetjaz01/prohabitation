@@ -32,7 +32,7 @@ export default function Hero3() {
 
             {/* 2. Remplacement du button par un Link avec les mêmes classes de style */}
             <Link 
-              href="/estimation" 
+              href="/peinture" 
               className="inline-block bg-slate-800 text-white px-10 py-4 text-lg font-medium hover:bg-slate-700 transition-all w-fit shadow-md text-center"
             >
               Peinture

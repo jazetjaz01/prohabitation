@@ -29,10 +29,10 @@ const Footer = () => {
             
             {/* --- Logo : Passage en Blanc pour fond Teal --- */}
             <div className="flex flex-col items-center leading-none mb-8">
-              <span className="font-monoton text-2xl md:text-4xl tracking-widest text-white uppercase">
-                prohabitation
-              </span>
-              <span className="hidden md:block text-sm md:text-lg font-medium -mt-1 tracking-[0.4em] text-white ml-1 ">
+              <span className="font-monoton text-lg md:text-2xl tracking-widest text-white">
+      prohabitation
+    </span>
+              <span className="hidden md:block text-sm md:text-sm font-medium -mt-1 tracking-[0.2em] text-white ml-1 ">
                 plaquiste peinture isolation
               </span>
             </div>

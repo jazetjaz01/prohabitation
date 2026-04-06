@@ -8,7 +8,7 @@ export const Logo = () => (
     </span>
     
     {/* "immobilier" avec un espacement de lettres élargi (tracking-widest) */}
-    <span className="hidden md:block text-sm md:text-sm font-medium -mt-1 tracking-[0.5em] ">
+    <span className="hidden md:block text-sm md:text-sm font-medium -mt-1 tracking-[0.3em] ">
       plaquiste peinture isolation
     </span>
   </div>

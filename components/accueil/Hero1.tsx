@@ -11,33 +11,32 @@ export default function Hero() {
     <section className="relative w-full overflow-hidden bg-background border-b min-h-[600px]">
       <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:h-[700px] relative">
         
-        {/* --- Colonne IMAGE (Gauche maintenant) --- */}
+        {/* --- Colonne IMAGE (Gauche) --- */}
         <div className="relative h-[300px] lg:h-full w-full z-0">
           <Image
             src="/images/accueil/accueil1.jpg" 
-            alt="Travaux de placo et peinture Perpignan" 
+            alt="Travaux de placo et peinture Perpignan - Prohabitation" 
             fill 
             priority 
             className="object-cover" 
           />
         </div>
 
-        {/* --- Colonne TEXTE (Droite maintenant) --- */}
+        {/* --- Colonne TEXTE (Droite) --- */}
         <div className="relative p-8 lg:p-20 flex flex-col justify-center items-start z-10 bg-slate-200
                         lg:bg-transparent
                         lg:after:content-[''] lg:after:absolute 
                         lg:after:top-0 lg:after:bottom-0 lg:after:left-[-100px] 
                         lg:after:right-0 
                         lg:after:bg-slate-300 lg:after:-z-10
-                        /* Le clip-path est inversé pour créer l'effet de biseau vers la gauche */
                         lg:after:[clip-path:polygon(100%_0%,0%_0%,100px_100%,100%_100%)]">
           
           <div className="max-w-xl lg:ml-12">
-            <Badge className="rounded-full border-border py-1 px-4 mb-6" variant="secondary">
-              <Link href="/actualite" className="flex items-center text-sm font-medium">
-                Actualité Prohabitation <ArrowUpRight className="ml-1 size-4" />
-              </Link>
-            </Badge>
+            <Badge className="rounded-full border-border py-1 px-4 mb-6 hover:bg-slate-100 transition-colors cursor-pointer" variant="secondary">
+    <Link href="/actualite" className="flex items-center text-sm font-medium">
+      Actualité Prohabitation <ArrowUpRight className="ml-1 size-4" />
+    </Link>
+  </Badge>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-slate-900 leading-[1.1] tracking-tight">
               Pose placo, peinture <br /> 
@@ -49,11 +48,17 @@ export default function Hero() {
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Button className="rounded-full text-base px-8 h-12 bg-slate-900 hover:bg-slate-800" size="lg">
-                Contact <ArrowUpRight className="ml-2 size-5" />
+              {/* --- AJOUT DU LIEN VERS CONTACT --- */}
+              <Button  className="rounded-full text-base px-8 h-12 bg-slate-900 hover:bg-teal-700 transition-all shadow-lg" size="lg">
+                <Link href="/contact" className="flex items-center">
+                  Contact <ArrowUpRight className="ml-2 size-5" />
+                </Link>
               </Button>
-              <Button className="rounded-full text-base px-8 h-12 shadow-none border-slate-300" size="lg" variant="outline">
-                <CirclePlay className="mr-2 size-5 text-slate-600" /> Youtube
+
+              <Button  className="rounded-full text-base px-8 h-12 shadow-none border-slate-300 hover:bg-white" size="lg" variant="outline">
+                <a href="https://www.youtube.com/@TonLienYoutube" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <CirclePlay className="mr-2 size-5 text-slate-600" /> YouTube
+                </a>
               </Button>
             </div>
           </div>

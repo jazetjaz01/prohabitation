@@ -89,8 +89,8 @@ export default function ContactForm() {
   return (
     <main className="min-h-screen bg-slate-200 py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-slate-800 mb-8 uppercase tracking-tighter">
-          Contact & Devis Gratuit Perpignan
+        <h1 className="text-4xl font-bold text-slate-800 mb-8 uppercase tracking-wide">
+          Contact  Perpignan
         </h1>
 
         <div className="bg-white p-8 md:p-16 shadow-sm border border-slate-100">

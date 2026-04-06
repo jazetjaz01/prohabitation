@@ -81,7 +81,7 @@ export default function DevisForm() {
   return (
     <main className="min-h-screen bg-slate-200 py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-slate-800 mb-2 uppercase tracking-tighter">
+        <h1 className="text-4xl font-bold text-slate-800 mb-2 uppercase tracking-wide">
           Demande de Devis Gratuit
         </h1>
         <p className="text-slate-500 mb-8 font-medium">Réponse rapide sous 48h - Secteur Perpignan & 66</p>

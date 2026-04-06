@@ -95,7 +95,7 @@ export default function ArticleDetailClient({ slug }: { slug: string }) {
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <Button 
             variant="ghost" 
-            onClick={() => router.push('/actualites')}
+            onClick={() => router.push('/actualite')}
             className="rounded-none hover:bg-slate-100 transition-colors gap-2 uppercase tracking-widest text-[10px] font-bold"
           >
             <ArrowLeft size={14} /> Retour
@@ -121,7 +121,7 @@ export default function ArticleDetailClient({ slug }: { slug: string }) {
           </div>
         </div>
 
-        <h1 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tighter uppercase leading-[0.9] mb-12">
+        <h1 className="text-3xl md:text-5xl font-black text-slate-900 tracking-wide uppercase leading-[0.9] mb-12">
           {post.title}
         </h1>
 

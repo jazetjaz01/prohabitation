@@ -9,10 +9,10 @@ const footerLinks = [
   { title: "Pose placo", href: "/placo" },
     { title: "Peinture", href: "/peinture" },
   { title: "Isolation", href: "/isolation" },
-  { title: "Recrutement", href: "/recrutement" },
+  { title: "Recrutement", href: "/contact" },
   { title: "Contact", href: "contact" },
-  { title: "Mentions Légales", href: "mentions" },
-    { title: "Confidentialite", href: "confidentialite" },
+  { title: "Mentions Légales", href: "contact" },
+    { title: "Confidentialite", href: "contact" },
 ];
 
 const Footer = () => {

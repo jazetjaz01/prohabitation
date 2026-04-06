@@ -39,7 +39,7 @@ export default function Hero1() {
             </h1>
             
             <p className="text-slate-700 text-lg md:text-xl mb-8 leading-relaxed">
-              Retrouvez l'activité de notre entreprise
+              Retrouvez l'activité de notre entreprise à Perpignan et dans les Pyrénées Orientales
               
             </p>
           </div>

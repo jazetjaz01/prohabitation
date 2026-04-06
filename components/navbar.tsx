@@ -25,7 +25,7 @@ const Navbar = () => {
           
           {/* Petit conseil : utilisez "asChild" si vous voulez que le Link 
               soit le seul élément cliquable sans doubler les balises <a> */}
-          <Button  className="bg-teal-600 hover:bg-teal-700 text-white border-none">
+          <Button  className="hidden md:block bg-teal-600 hover:bg-teal-700 text-white border-none">
             <a href="tel:0616224682">06 16 22 46 82</a>
           </Button>
 

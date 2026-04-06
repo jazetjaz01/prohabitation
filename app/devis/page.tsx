@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import DevisForm from "@/components/DevisForm"; // Import du composant ci-dessous
+import DevisForm from "@/components/DevisForm";
 
 export const metadata: Metadata = {
   title: "Devis Gratuit Plaquiste & Peinture Perpignan | Prohabitation",

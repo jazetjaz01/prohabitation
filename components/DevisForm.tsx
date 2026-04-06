@@ -79,7 +79,7 @@ export default function DevisForm() {
   const iconInputStyle = "pl-10 h-12 bg-slate-50/50 border-slate-200 rounded-none focus:ring-teal-600 focus:bg-white transition-all";
 
   return (
-    <main className="min-h-screen bg-slate-100 py-12 px-4">
+    <main className="min-h-screen bg-slate-200 py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-slate-800 mb-2 uppercase tracking-tighter">
           Demande de Devis Gratuit
